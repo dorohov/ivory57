@@ -1,0 +1,43 @@
+<main class="{{content_prefix}}panel">
+	<div class="{{content_prefix}}container container  is--full">
+		<div class="{{content_prefix}}elem">			
+			<div class="{{content_prefix}}row row  is--gutter  is--wrap  {{content_mod}}">
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--left">
+					[[azbntple 
+						tpl="/src/block/site/default/page-header/panel.html"
+						block_prefix="page-header__" 
+						block_mod="{{block_heading_mod}}"
+						block_heading_level="{{block_heading_level}}"
+						block_heading="{{block_heading}}"
+					]]	
+					[[azbntple 
+						tpl="/src/block/site/default/social/panel-contacts.html" 
+						block_prefix="social-contacts__" 
+						block_mod="is--contacts" 
+					]]
+					[[azbntple 
+						tpl="/src/block/site/default/social/panel.html" 
+						block_prefix="social__" 
+						block_mod="is--contacts" 
+					]]
+				</div>	
+				<div class="{{content_prefix}}cols cols  {{content_mod}}  is--right">
+					[[azbntple 
+						tpl="/src/block/site/default/form/panel-call.html" 
+						block_prefix="form-panel__"
+						block_mod="is--call  is--contacts"
+						form_prefix="form__"
+						form_id="f_call"
+						form_mod="is--call" 
+						form_color="  "
+						form_heading_mod="is--form-panel  is--sm"
+						form_heading="Записаться на примерку"
+						form_heading_small="или заказать обратный звонок"
+						form_btn_name="Отправить"
+						form_btn_mod="  "
+					]]
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

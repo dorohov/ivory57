@@ -1,0 +1,43 @@
+{
+	"contacts":{
+		"name":"Свадебный салон «Айвори»",
+		"domain":"ivory57.ru",
+		"domain_link":"http://ivory57.ru/",
+		"color":"#F5EAE4",
+		"agreement_page":"agreement",
+		"copyright":"Свадебный салон «Айвори»",
+		"email":"ivory57@yandex.ru",
+		"phone":" +7 (4862) 489-908",  
+		"phone_tel":"+74862489908",   
+		"clock":"Мы работаем ежедневно с 10:00 до 19:30", 
+		"address":"г. Орел, ул. Ленина, д.&nbsp;17, ТЦ&nbsp;«Малиновая вода», павильон&nbsp;16"
+	},
+	"soc":{
+		"vk":"https://vk.com/club18730447",
+		"fb":"https://www.facebook.com/",
+		"ok":"https://ok.ru/group/",
+		"tw":"https://twitter.com/",
+		"inst":"https://www.instagram.com/ivorysalon/?modal=true"
+	},
+	"page":{
+		"index":"/",
+		"catalog":"/catalog.html",
+		"catalog_category":"/catalog-category.html",
+		"catalog_card":"/catalog-card.html",
+		"about":"/about.html",
+		"reviews":"/reviews.html",
+		"articles":"/articles.html",
+		"articles_card":"/articles-card.html",
+		"contacts":"/contacts.html",
+		"404":"/404.html",
+		"sitemap":"/sitemap.html",
+		"style":"/style.html",
+		"agreement":"/agreement.html"
+	},	                           
+	"url-path-css":"/css",
+	"url-path-img":"/img",
+	"url-path-js":"/js",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon":"/favicon",
+	"url-path-docs":"/docs"
+}

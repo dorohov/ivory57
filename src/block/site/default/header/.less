@@ -1,0 +1,71 @@
+.header-block__{
+	&block{
+		position: relative;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		//padding-top: 20px;
+		//padding-bottom: 20px;
+		height: 300px;
+		@media @media-point-tablet {
+			height: 50vh;
+		}
+		@media @media-point-screen {
+			max-height: 865px;
+			height:~"calc(100vh - @{navbar-device})";
+			background-position: center bottom;
+		}
+		@media @media-point-screen-lg {
+			//padding-top: @navbar-screen;
+			//padding-bottom: @navbar-screen;
+			background-attachment: fixed;
+			height:~"calc(100vh - @{navbar-screen})";
+		}
+	}
+	&container{
+		position: relative;
+		z-index: 2;
+		height: 100%;
+		width: 100%;
+		max-width: 100%;
+		padding: 0;
+	}
+	&panel{
+		position: relative;
+		display: flex;
+		align-items: center;
+		background-color: fadeout(@white, 30%);
+		height: 100%;
+		padding: 30px 15px;
+		@media @media-point-tablet {
+			max-width: 50%;
+		}
+		@media @media-point-screen {
+			padding-top: 4.2vw;
+			padding-bottom: 4.2vw;
+			max-width: 42vw;
+			padding-left: 4vw;
+			padding-right: 4vw;
+
+		}
+		@media @media-point-xxl {
+			padding-left: 9.5vw;
+			padding-right: 9.5vw;
+		}
+	}
+	&inner{
+		
+	}
+	&heading{
+		font-family: @b-ff-2;
+		color: @black;
+		.calcFontSize(40, 70, 320, 1680);
+		.calcLineHeight(40, 70, 320, 1680);
+		font-weight: 400;
+		margin-bottom: 25px;
+		@media @media-point-notsmart {
+			margin-bottom: 3.2vw;
+		}
+	}
+}

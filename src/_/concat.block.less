@@ -1064,7 +1064,7 @@
 			@media @media-point-screen {
 				padding: 1.6vw 0
 			}	
-			&.is--index{
+			/*&.is--index{
 				@media @media-point-device {
 					.calcFontSize(28, 32, 320, 1025);
 					.calcLineHeight(32, 36, 320, 1025);
@@ -1073,7 +1073,7 @@
 					font-size: @b-fs + 6;
 					line-height: @b-lh + 4;
 				}		
-			}	
+			}*/	
 		}
 		&.is--catalog{
 			font-family: @b-ff-2;
@@ -2174,13 +2174,17 @@ body.rtl .formError .formErrorArrow {
 	&heading{
 		font-family: @b-ff-2;
 		color: @b-color-h;
-		.calcFontSize(40, 70, 320, 1680);
-		.calcLineHeight(40, 70, 320, 1680);
+		.calcFontSize(40, 50, 320, 1680);
+		.calcLineHeight(40, 50, 320, 1680);
 		font-weight: 400;
 		margin-bottom: 25px;
 		@media @media-point-notsmart {
 			margin-bottom: 3.2vw;
 		}
+		/*@media @media-point-lg {
+			.calcFontSize(28, 34, 1200, 1399);
+			.calcLineHeight(32, 38, 1200, 1399);
+		}*/
 	}
 }
  //

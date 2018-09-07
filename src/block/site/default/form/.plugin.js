@@ -33,7 +33,9 @@ $(function(){
 		} else {			
 			var form = $(this);
 			var _form = form.clone();			
-			var method = form.attr('data-method') || 'formsave';			
+			var method = form.attr('data-method') || 'formsave';
+			var form_mess = form.attr('data-message') || "#modal-message";
+
 			_form
 				.append($('<input/>', {
 					type : 'hidden',
@@ -41,7 +43,8 @@ $(function(){
 					value : method,
 				}))
 			;			
-			new Azbn7__API__Request(_form.serialize(), function(resp){				
+			new Azbn7__API__Request(_form.serialize(), function(resp){	
+
 				_form
 					.trigger('reset')
 					.empty()
@@ -53,7 +56,7 @@ $(function(){
 				form
 					.closest('.modal')
 						.modal('hide');									
-				$('#modal-message').modal();					
+				$(form_mess).modal();					
 			});				
 		}			
 	});

@@ -25,6 +25,7 @@ $(function() {
 		fade: true
 	});*/
 	catalog.slick({
+		//lazyLoad: 'ondemand',
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		infinite: true,

@@ -55,13 +55,30 @@
 			}
 		}
 		&.is--dorohovdesign{
+		display: inline-block;
 			@media @media-point-device {
-				.makeCols(12, 12);
+				.makeCols(6, 12);
 			}
 		}
 		&.is--contacts{			
 			@media @media-point-device {
 				.makeCols(12, 12);
+			}
+		}
+		&.is--socials1{	
+		display:flex;
+		align-items: flex-start;
+			@media @media-point-device {
+				display:none;
+			}
+		}
+		&.is--socials2{	
+		display:none;
+			@media @media-point-device {
+				align-items: flex-start;
+				display:flex;
+				.makeCols(6, 12);
+				text-align: center;
 			}
 		}
 	}
@@ -123,5 +140,41 @@
 		a&, a&:focus, a&:hover{
 			color: @footer-color;
 		}	
+	}
+	&socials-logotip{	
+		border: none;
+		display: inline-block;
+		margin: 0;
+		padding-top: 5px;
+		width: 32px;
+		height: 32px;
+		@media @media-point-xs {margin: 0 auto}
+		@media @media-point-notsmart {}
+		@media @media-point-screen {
+			width: 36px;
+			height: 36px;
+			margin: 0;
+		}
+		a&, a&:focus, a&:hover{
+			color: @footer-color;
+		}	
+	}
+	&socials-row{
+		align-items: center;
+		margin-left: -5px;
+		margin-right: -5px;
+		justify-content: center;
+		@media @media-point-device {
+			justify-content: center;
+			flex-wrap: wrap;
+		} 
+	}
+	&socials-cols{
+		padding-left: 1px;
+		padding-right: 1px;
+		//@media @media-point-device {.makeCols(12, 12);}
+		&.is--text{
+			text-align: center;
+		}
 	}
 }
